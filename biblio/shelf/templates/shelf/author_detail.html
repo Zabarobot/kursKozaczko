@@ -1,0 +1,11 @@
+{%  extends "base.html" %}
+
+
+{%  block content %}
+
+    <div><a href="{% url 'shelf:author-list' %}">Powrot</a></div>
+
+    Widok szczegolowy
+    {{ object.last_name }} {{ object.first_name }}
+
+{%  endblock %}
